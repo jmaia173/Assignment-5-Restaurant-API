@@ -1,7 +1,7 @@
 {
   "name": "assignment5",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository contains your starter code for the Restaurant API assignment focusing on middleware implementation and API documentation.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,9 +12,17 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0",
-    "express-validator": "^7.2.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmaia173/Assignment-5-Restaurant-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmaia173/Assignment-5-Restaurant-API/issues"
+  },
+  "homepage": "https://github.com/jmaia173/Assignment-5-Restaurant-API#readme"
 }
