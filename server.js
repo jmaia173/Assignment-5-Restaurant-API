@@ -1,3 +1,6 @@
+// published documentation URL
+// https://documenter.getpostman.com/view/48299586/2sBXcEm1UC
+
 // Import packages, initialize an express app, and define the port
 const express = require("express");
 const app = express();
@@ -5,12 +8,11 @@ const PORT = 3000;
 
 const { body, validationResult } = require("express-validator");
 
-// Middleware (allows server to read JSON from requests)
+// Middleware 
 app.use(express.json());
 
-// =========================
 // Request Logging Middleware
-// =========================
+
 const requestLogger = (req, res, next) => {
   const timestamp = new Date().toISOString();
 
@@ -31,9 +33,8 @@ const requestLogger = (req, res, next) => {
 
 app.use(requestLogger);
 
-// =========================
 // Validation Middleware
-// =========================
+
 const validateMenuItem = [
   body("name")
     .isString()
@@ -140,9 +141,7 @@ let menuItems = [
 ];
 
 
-// =========================
 // ROUTES
-// =========================
 
 // GET /api/menu - Retrieve all menu items
 app.get("/api/menu", (req, res) => {
